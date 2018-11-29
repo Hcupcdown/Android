@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>完整的webrtc客户端</title>
+    <style>
+    body{
+        background-color: rgb(77, 77, 116);
+        margin-top:15px;
+        font-family:sans-serif;
+        color:white;
+    }
+    #windows0{
+        background:black;
+        border:1px solid gray;
+        height:470px;
+        width:470px;
+    }
+    .participant{
+       float: left;
+       width: 230px;
+       height: 230px;
+       font-size: 20px;
+       background-color:black;
+       border-radius: 4px;
+       margin: 0 10px 10px 0;
+       position: relative;
+}
+.main{
+    width: 470px;
+    height: 470px;
+}
+#windows1{
+        float: left;
+       width: 230px;
+       height: 230px;
+       font-size: 20px;
+       background-color:black;
+       border-radius: 4px;
+       margin: 0 10px 10px 0;
+       position: relative;
+    }
+    #windows2{
+        float: left;
+       width: 230px;
+       height: 230px;
+       font-size: 20px;
+       background-color:black;
+       border-radius: 4px;
+       margin: 0 10px 10px 0;
+       position: relative;
+    }
+    #windows3{
+        float: left;
+       width: 230px;
+       height: 230px;
+       font-size: 20px;
+       background-color:black;
+       border-radius: 4px;
+       margin: 0 10px 10px 0;
+       position: relative;
+    }
+    #windows4{
+        float: left;
+       width: 230px;
+       height: 230px;
+       font-size: 20px;
+       background-color:black;
+       border-radius: 4px;
+       margin: 0 10px 10px 0;
+       position: relative;
+    }
+    </style>
+</head>
+<body>
+    <div id="login-page" class ="page">
+        <h2 align="center">Login As</h2>
+        <center>
+            <input type="text" id="username"/>
+            <button id="login">登录</button>
+        </center>
+    </div>
+    <div id="call-page">
+            <div class="participant main">
+                <video id="windows0" autoplay muted></video>
+            </div>
+            <div class="participant">
+                <video id="windows1" autoplay></video>
+            </div>
+            <div class="participant">
+                <video id="windows2" autoplay></video>
+            </div>
+            <div class="participant">
+                <video id="windows3" autoplay></video>
+            </div>
+            <div class="participant">
+                <video id="windows4" autoplay></video>
+            </div>
+            <div class="participant">
+                <video id="windows5" autoplay></video>
+            </div>
+            <div class="participant">
+                <video id="windows6" autoplay></video>
+            </div>
+    </div>
+    <div id="button">
+        <center>
+            <input align="center" type="text" id="their-username">
+            <button id="call">呼叫</button>    
+        </center>
+        <center>
+            <input align="center" type="text" id="leave-username">
+            <button id="hang-up">挂断</button>
+        </center>
+    </div>
+    <div id="changespeaker">
+        <center>
+            <input align="center" type="text" id="speaker-name">
+            <button id="change">设为主讲人</button>
+            </center>
+    </div>
+</div>
+        <script src="client.js"></script>
+</body>
+</html>
